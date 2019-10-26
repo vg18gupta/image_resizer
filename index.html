@@ -1,0 +1,125 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>IMAGE_RESIZER</title>
+</head>
+</body>
+
+        <header>
+            <nav>
+
+            </nav>
+
+            <h1>IMAGE_RESIZER</h1>
+            <a href ="#" class="btn btn-full"> upload </a>
+
+        </header>
+</body>
+</html> -->
+
+
+<body data-gr-c-s-loaded="true">
+
+
+<div class="container">
+
+<head>
+<title>IMAGE_RESIZER</title>
+
+</head>
+<link rel="stylesheet"  type="text/css" href="style.css">
+ <h1>IMAGE_RESIZER</h1>
+
+        
+    
+
+    
+        
+    
+
+    
+
+<div>
+    <form id="resize-form" method="POST" enctype="multipart/form-data" action="/upload">
+        <input id="fileInput" type="file" name="photo">
+        <input id="filePath" type="text" onclick="triggerSelectFileDialog();" placeholder="Select image from computer">
+        <input type="button" class="button blue large" value="Select image" onclick="triggerSelectFileDialog();">
+
+        <div class="radios">
+        <div class="define_result_label">Define the new size of your image using:</div>
+
+            <div class="method-selection">
+                <input type="radio" name="resize-method" id="percent-method" value="percent" checked="checked">
+                <label for="percent-method">percentage (%)</label>
+                <input type="radio" name="resize-method" id="dimensions-method" value="dimensions">
+                <label for="dimensions-method">dimensions</label>
+            </div>
+
+            <div id="percent" class="percent">
+                <div id="percent-slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 49.4949%;"></a></div>
+                <p>
+                    <label for="percent-resize" class="percent_label">make image</label>
+                    <input type="text" id="percent-resize" name="percent-resize" class="percent" value="70">
+                    <label for="percent-resize" class="percent_label">%&nbsp;&nbsp;smaller</label>
+                </p>
+            </div>
+
+            <div id="dimensions" class="dimensions" style="display: none;">
+                <tbody><tr>
+                    <td><input type="text" class="imgdim" id="width" name="width"></td>
+                    <td class="dim_separator">x</td>
+                    <td><input type="text" class="imgdim" id="height" name="height"></td>
+                </tr>
+                <tr class="dim_description">
+                    <td>width</td>
+                    <td></td>
+                    <td>height</td>
+                </tr>
+
+            </tbody></div>
+        </div>
+        <input id="submit-resize-button" type="submit" class="button green large resize-btn" value="Resize">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
